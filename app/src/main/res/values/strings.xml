@@ -1,0 +1,74 @@
+<resources>
+    <string name="app_name">hremp</string>
+    <string name="open_nav">Open Navigation Drawer</string>
+    <string name="close_nav">Close Navigation Drawer</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+
+    <string name="privacy_policy">Privacy Policy</string>
+    <string name="privacy_policy_content">
+    Thank you for using our Employee and HR Application. This Privacy Policy outlines how we collect, use, and protect your personal information.
+
+    <b>1. Information We Collect:</b>
+    - Personal Information: We may collect personal information such as your name, email address, and other relevant details.
+    - Usage Data: We collect information about how you interact with our application, including pages visited, features used, and other usage patterns.
+
+    <b>2. How We Use Your Information:</b>
+    - Personalization: We use your information to personalize your experience within the application.
+    - Communication: We may use your email address to send important updates, announcements, and newsletters.
+
+    <b>3. Data Security:</b>
+    We prioritize the security of your data and implement measures to safeguard it against unauthorized access and disclosure.
+
+    <b>4. Third-Party Services:</b>
+    Our application may utilize third-party services for analytics and other purposes. These services have their own privacy policies, and we recommend reviewing them.
+
+    <b>5. User Rights:</b>
+    You have the right to access, correct, or delete your personal information. For assistance, please contact our support team.
+
+    <b>6. Changes to Privacy Policy:</b>
+    We may update this Privacy Policy as needed. You will be notified of any significant changes.
+
+    By using our application, you agree to the terms outlined in this Privacy Policy.
+
+    For any questions or concerns regarding your privacy, please contact us at [your_contact_email@example.com].
+</string>
+
+    <string name="terms_of_service">Terms of Service</string>
+    <string name="terms_of_service_content">
+    Welcome to our Employee and HR Application. By accessing or using our application, you agree to abide by these Terms of Service.
+
+    <b>1. Acceptance of Terms:</b>
+    By using our application, you agree to comply with these Terms of Service. If you do not agree, please refrain from using our services.
+
+    <b>2. Use of the Application:</b>
+    You are granted a limited, non-exclusive, and non-transferable license to use our application for its intended purpose.
+
+    <b>3. User Responsibilities:</b>
+    - You are responsible for maintaining the confidentiality of your account credentials.
+    - You agree not to engage in any unlawful activities or activities that may harm the integrity of our application.
+
+    <b>4. Intellectual Property:</b>
+    The content, features, and functionality of the application are protected by intellectual property laws. Unauthorized use may violate copyright and other laws.
+
+    <b>5. Termination of Services:</b>
+    We reserve the right to terminate or suspend your access to the application without prior notice if you violate these Terms of Service.
+
+    <b>6. Limitation of Liability:</b>
+    We are not liable for any direct, indirect, incidental, consequential, or punitive damages arising from your use of the application.
+
+    <b>7. Changes to Terms:</b>
+    We may update these Terms of Service from time to time. It is your responsibility to review the terms periodically. Continued use of the application constitutes acceptance of any changes.
+
+    <b>8. Governing Law:</b>
+    These Terms of Service are governed by and construed in accordance with the laws of [your jurisdiction].
+
+    <b>9. Contact Information:</b>
+    For questions or concerns regarding these Terms of Service, please contact us at [your_contact_email@example.com].
+
+    By using our application, you acknowledge that you have read, understood, and agree to be bound by these Terms of Service.
+</string>
+
+
+</resources>

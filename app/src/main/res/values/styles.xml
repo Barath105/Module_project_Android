@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="CalendarDateText">
+        <item name="android:textColor">@android:color/black</item>
+    </style>
+    <style name="CustomDateText">
+        <item name="android:textColor">@android:color/black</item>
+    </style>
+
+    <style name="BlackDateText">
+        <item name="android:textColor">@color/black</item>
+    </style>
+</resources>

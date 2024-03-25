@@ -1,0 +1,342 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HrHomeFragment"
+    android:background="@drawable/background">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <!-- Header -->
+        <TextView
+            android:id="@+id/textViewHeader"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="HR Dashboard"
+            android:textSize="24sp"
+            android:textColor="@color/black"
+            android:padding="16dp"/>
+
+        <!-- First row of containers -->
+        <LinearLayout
+            android:id="@+id/firstRow"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_below="@id/textViewHeader"
+            android:padding="8dp">
+
+            <!-- Container 1 -->
+            <LinearLayout
+                android:id="@+id/container1"
+                android:layout_width="0dp"
+                android:layout_height="120dp"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:layout_marginRight="8dp"
+                android:background="@drawable/rounded_background">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Total Employees"
+                    android:textColor="@color/black"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="10dp"
+                    android:textStyle="bold"
+                    android:textSize="15dp"
+                    android:fontFamily="@font/quicksand"
+                    android:contentDescription="Total Employees"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/userCount"
+                    android:textColor="@color/black"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="15dp"
+                    android:textStyle="bold"
+                    android:textSize="15dp"
+                    android:fontFamily="@font/ptsans"
+                    android:contentDescription="Total Employees"/>
+
+                <Button
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/employeeinfo"
+                    android:text="More info"
+                    android:textColor="@color/black"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="1dp"
+                    android:textStyle="bold"
+                    android:textSize="12dp"
+                    android:fontFamily="@font/quicksand"
+                    android:backgroundTint="@color/skyblue"/>
+            </LinearLayout>
+
+            <!-- Container 2 -->
+            <LinearLayout
+                android:id="@+id/container2"
+                android:layout_width="0dp"
+                android:layout_height="120dp"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:layout_marginLeft="8dp"
+                android:background="@drawable/rounded_background">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Total Project"
+                    android:fontFamily="@font/quicksand"
+                    android:textColor="@color/black"
+                    android:layout_marginTop="10dp"
+                    android:textStyle="bold"
+                    android:layout_gravity="center"
+                    android:textSize="15dp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="15dp">
+
+                    <!-- Active: text -->
+                    <TextView
+                        android:id="@+id/active"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Active:"
+                        android:layout_marginStart="20dp"
+                        android:fontFamily="@font/ptsans"
+                        android:textColor="@color/Green"
+                        android:textSize="15dp"
+                        android:textStyle="bold" />
+
+                    <!-- Product count -->
+                    <TextView
+                        android:id="@+id/productCount"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="6dp"
+                        android:fontFamily="@font/ptsans"
+                        android:textColor="@color/black"
+                        android:textSize="15dp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/completed"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Completed:"
+                        android:layout_marginStart="20dp"
+                        android:fontFamily="@font/ptsans"
+                        android:textColor="@color/Red"
+                        android:textSize="15dp"
+                        android:textStyle="bold" />
+
+                    <!-- Product count -->
+                    <TextView
+                        android:id="@+id/projectComplete"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="6dp"
+                        android:fontFamily="@font/ptsans"
+                        android:textColor="@color/black"
+                        android:textSize="15dp"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+
+
+                <Button
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:text="More info"
+                    android:id="@+id/projectinfo"
+                    android:textColor="@color/black"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="1dp"
+                    android:textStyle="bold"
+                    android:backgroundTint="@color/skyblue"
+                    android:textSize="12dp"
+                    android:fontFamily="@font/quicksand" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <!-- Second row of containers -->
+        <LinearLayout
+            android:id="@+id/secondRow"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_below="@id/firstRow"
+            android:padding="8dp">
+
+            <!-- Container 3 -->
+            <LinearLayout
+                android:id="@+id/container3"
+                android:layout_width="0dp"
+                android:layout_height="120dp"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:layout_marginRight="8dp"
+                android:background="@drawable/rounded_background">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Total Revenue"
+                    android:textColor="@color/black"
+                    android:layout_gravity="center"
+                    android:textStyle="bold"
+                    android:fontFamily="@font/quicksand"
+                    android:layout_marginTop="10dp"
+                    android:textSize="15dp" />
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:id="@+id/revenue"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="15dp"
+                    android:textStyle="bold"
+                    android:textSize="15dp"
+                    android:fontFamily="@font/ptsans" />
+
+
+
+                <Button
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:text="More info"
+                    android:id="@+id/revenuebtn"
+                    android:textColor="@color/black"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="1dp"
+                    android:textStyle="bold"
+                    android:textSize="12dp"
+                    android:backgroundTint="@color/skyblue"
+                    android:fontFamily="@font/quicksand" />
+            </LinearLayout>
+
+            <!-- Container 4 -->
+            <LinearLayout
+                android:id="@+id/container4"
+                android:layout_width="0dp"
+                android:layout_height="120dp"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:layout_marginLeft="8dp"
+                android:background="@drawable/rounded_background">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Total client"
+                    android:textColor="@color/black"
+                    android:fontFamily="@font/quicksand"
+                    android:layout_marginTop="10dp"
+                    android:textStyle="bold"
+                    android:layout_gravity="center"
+                    android:textSize="15dp"
+                    android:contentDescription="Total client"/>
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/clientcount"
+                    android:textColor="@color/black"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="15dp"
+                    android:textStyle="bold"
+                    android:textSize="15dp"
+                    android:fontFamily="@font/ptsans" />
+
+
+
+                <Button
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:text="More info"
+                    android:id="@+id/clientinfo"
+                    android:textColor="@color/black"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="1dp"
+                    android:textStyle="bold"
+                    android:backgroundTint="@color/skyblue"
+                    android:textSize="12dp"
+                    android:fontFamily="@font/quicksand"
+                    android:contentDescription="Total Employees"/>
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+        <!-- BarChart for department counts -->
+        <com.github.mikephil.charting.charts.BarChart
+            android:id="@+id/barChart"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:layout_below="@id/secondRow"
+            android:layout_marginTop="30dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Department"
+            android:textColor="@color/black"
+            android:fontFamily="@font/quicksand"
+            android:textStyle="bold"
+            android:textSize="15dp"
+            android:layout_below="@+id/barChart"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"/>
+
+        <!-- PieChart for gender distribution -->
+        <com.github.mikephil.charting.charts.PieChart
+            android:id="@+id/pieChart"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/barChart"
+            android:layout_marginTop="68dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"/>
+
+        <!-- TextView for Department -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Category by Gender"
+            android:textColor="@color/black"
+            android:fontFamily="@font/quicksand"
+            android:textStyle="bold"
+            android:textSize="15dp"
+            android:paddingBottom="20dp"
+            android:gravity="center"
+            android:layout_below="@+id/pieChart"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"/>
+
+        <!-- CalendarView -->
+        <CalendarView
+            android:id="@+id/calendarView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:layout_marginBottom="30dp"
+            android:layout_below="@id/pieChart"
+            android:dateTextAppearance="@style/BlackDateText"/>
+    </RelativeLayout>
+
+</ScrollView>

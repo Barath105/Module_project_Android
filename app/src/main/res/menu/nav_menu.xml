@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group
+        android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/home"
+            android:title="Home"/>
+        <item
+            android:id="@+id/nav_viewprofile"
+            android:icon="@drawable/profile"
+            android:title="View Profile"/>
+        <item
+            android:id="@+id/nav_markatt"
+            android:icon="@drawable/markatt"
+            android:title="Mark Attendance"/>
+        <item
+            android:id="@+id/nav_viewatt"
+            android:icon="@drawable/viewatt"
+            android:title="View Attendance"/>
+        <item
+            android:id="@+id/nav_leave"
+            android:icon="@drawable/leave"
+            android:title="Leave ▽"/>
+        <item
+            android:id="@+id/nav_permission"
+            android:icon="@drawable/permission"
+            android:title="Permission"/>
+        <item
+            android:id="@+id/nav_overtime"
+            android:icon="@drawable/overtime"
+            android:title="Over Time"/>
+        <item
+            android:id="@+id/nav_payslip"
+            android:icon="@drawable/payslip"
+            android:title="Payslip"/>
+        <item
+            android:id="@+id/nav_settings"
+            android:icon="@drawable/settings"
+            android:title="Settings"/>
+</group>
+
+    <item
+        android:title="">
+
+        <menu>
+            <item
+                android:id="@+id/nav_logout"
+                android:icon="@drawable/logout"
+                android:title="Logout">
+
+            </item>
+        </menu>
+    </item>
+
+</menu>

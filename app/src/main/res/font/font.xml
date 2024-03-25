@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<font-family xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- Regular variant of the font -->
+    <font
+        android:fontStyle="normal"
+        android:fontWeight="700"
+        android:font="@font/quicksand" />
+
+    <font
+        android:fontStyle="normal"
+        android:fontWeight="700"
+        android:font="@font/ptsans" />
+
+</font-family>

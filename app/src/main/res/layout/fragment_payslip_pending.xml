@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".OdPending"
+    android:background="@drawable/background">
+
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TableLayout
+            android:id="@+id/tableLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <!-- Header Row -->
+            <TableRow
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/skyblue">
+
+                <TextView
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content"
+                    android:text="ID"
+                    android:layout_gravity="center"
+                    android:padding="10dp"
+                    android:textColor="@color/black" />
+
+                <TextView
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="User ID"
+                    android:textColor="@color/black"
+                    android:padding="10dp" />
+
+
+
+                <TextView
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:text="Name"
+                    android:layout_gravity="center"
+                    android:textColor="@color/black"
+                    android:padding="10dp" />
+
+
+                <TextView
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:text="Date"
+                    android:layout_gravity="center"
+                    android:textColor="@color/black"
+                    android:padding="10dp" />
+
+                <TextView
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:text="Status"
+                    android:layout_gravity="center"
+                    android:textColor="@color/black"
+                    android:padding="10dp" />
+
+
+            </TableRow>
+
+            <!-- Data Rows (You can add more rows as needed) -->
+
+
+            <!-- Add more data rows as needed -->
+
+        </TableLayout>
+    </HorizontalScrollView>
+</FrameLayout>

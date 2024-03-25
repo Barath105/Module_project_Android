@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "628534438774",
+    "project_id": "hremp-b70d2",
+    "storage_bucket": "hremp-b70d2.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:628534438774:android:ab9c66e3f785109816a857",
+        "android_client_info": {
+          "package_name": "com.example.hremp"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAipBF59BYWyObnwT-kzwVHZGqsiBbpsc8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

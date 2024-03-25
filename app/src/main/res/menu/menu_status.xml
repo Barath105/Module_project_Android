@@ -1,0 +1,14 @@
+<!-- res/menu/menu_leave.xml -->
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/nav_leave_status"
+        android:title="Leave Status" />
+    <item
+        android:id="@+id/nav_od_status"
+        android:title="OD Status" />
+
+
+    <item
+        android:id="@+id/nav_permission_status"
+        android:title="Permission Status" />
+</menu>

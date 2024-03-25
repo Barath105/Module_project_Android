@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MarkattFragment"
+    android:background="@drawable/background">
+
+    <LinearLayout
+        android:id="@+id/locationContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_centerInParent="true"
+        android:layout_margin="16dp"
+        android:background="@drawable/border_background">
+
+        <!-- Branch Location Text -->
+        <TextView
+            android:id="@+id/textBranchLocation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Branch Location"
+            android:textSize="28dp"
+            android:textColor="@color/black"
+            android:gravity="center"/>
+
+
+        <!-- Location -->
+        <TextView
+            android:id="@+id/textLocation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Saveetha School Of Engineering, Thandalam"
+            android:textSize="16sp"
+            android:textColor="@color/black"
+            android:gravity="center"/>
+
+        <!-- Latitude -->
+        <TextView
+            android:id="@+id/textLatitude"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Latitude: 13.0289379"
+            android:textSize="16sp"
+            android:gravity="center"/>
+
+        <!-- Longitude -->
+        <TextView
+            android:id="@+id/textLongitude"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Longitude: 80.0193009"
+            android:textSize="16sp"
+            android:gravity="center"/>
+
+        <!-- Location Button -->
+        <Button
+            android:id="@+id/buttonPickLocation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Pick Location"
+            android:layout_marginTop="16dp"
+            android:onClick="onPickLocationButtonClick"
+            android:background="@color/skyblue"/>
+
+    </LinearLayout>
+
+</RelativeLayout>

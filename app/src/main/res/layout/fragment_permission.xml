@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PermissionFragment"
+    android:background="@drawable/background">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp">
+
+        <!-- Common ID for all buttons -->
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/commonButton"
+            style="@style/Widget.MaterialComponents.Button.TextButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Apply"
+            android:textColor="@color/black"
+            android:layout_marginEnd="20dp"
+            app:backgroundTint="@color/skyblue"/>
+        <!-- Set the text for each button -->
+        <com.google.android.material.button.MaterialButton
+            style="@style/Widget.MaterialComponents.Button.TextButton"
+            android:layout_width="0dp"
+            android:id="@+id/pending"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Pending"
+            android:textColor="@color/black"
+            android:layout_marginEnd="20dp"
+            app:backgroundTint="@color/skyblue"/>
+
+        <com.google.android.material.button.MaterialButton
+            style="@style/Widget.MaterialComponents.Button.TextButton"
+            android:layout_width="0dp"
+            android:id="@+id/history"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textColor="@color/black"
+            android:text="History"
+            app:backgroundTint="@color/skyblue"/>
+
+    </LinearLayout>
+
+
+    <!-- User ID -->
+<!--    <com.google.android.material.textfield.TextInputLayout-->
+<!--        android:id="@+id/textInputUserId"-->
+<!--        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginTop="100dp"-->
+<!--        android:layout_marginLeft="16dp"-->
+<!--        android:layout_marginRight="16dp"-->
+<!--        android:hint="User ID"-->
+<!--        android:textColorHint="@color/black"-->
+<!--        app:startIconContentDescription="User Icon"-->
+<!--        app:endIconMode="clear_text">-->
+
+<!--        <com.google.android.material.textfield.TextInputEditText-->
+<!--            android:id="@+id/editTextUserId"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:inputType="text"-->
+<!--            android:layout_below="@id/commonButton"-->
+<!--            android:textColor="@color/black"-->
+<!--            android:layout_marginBottom="20dp"-->
+<!--            android:textColorHint="@color/black"/>-->
+<!--    </com.google.android.material.textfield.TextInputLayout>-->
+
+    <!-- Leave Type -->
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textInputLeave"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense.ExposedDropdownMenu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:hint="Session"
+        android:textColor="@color/black"
+        android:textColorHint="@color/black"
+        android:layout_marginBottom="10dp">
+
+        <AutoCompleteTextView
+            android:id="@+id/filled_exposed"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:inputType="none"
+            android:contentDescription="Select session" /> <!-- Add contentDescription here -->
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <!-- Start Date -->
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textInputDate"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textInputLeave"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:hint="Date"
+        android:textColorHint="@color/black"
+        app:startIconContentDescription="User Icon"
+        android:layout_marginTop="10dp"
+        app:endIconMode="clear_text">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/editTextDate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="text"
+            android:textColor="@color/black"
+            android:textColorHint="@color/black"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+
+    <!-- Reason -->
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textInputReason"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textInputDate"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:hint="Reason"
+        android:textColorHint="@color/black"
+        app:startIconContentDescription="User Icon"
+        android:layout_marginTop="10dp"
+        app:endIconMode="clear_text">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/editTextReason"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="text"
+            android:textColor="@color/black"
+            android:textColorHint="@color/black"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <!--    Upload File-->
+
+    <FrameLayout
+        android:id="@+id/frameLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textInputReason"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="16dp">
+
+        <!-- Existing code ... -->
+
+        <!-- Add this EditText field to display the selected file name -->
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/textInputLayoutFileName"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="File Name"
+            android:textColorHint="@color/black"
+            app:endIconMode="clear_text"
+            app:startIconContentDescription="User Icon">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/editTextFileName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="50dp"
+                android:inputType="none"
+                android:focusable="false"
+                android:clickable="true"
+                android:drawableEnd="@drawable/fileopen"
+                android:drawablePadding="8dp"
+                android:textColor="@color/black"
+                android:textColorHint="@color/black" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <Button
+            android:id="@+id/btnUploadFile"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end|bottom"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="55dp"
+            android:text="Upload"
+            android:onClick="onUploadButtonClick" />
+
+    </FrameLayout>
+
+
+
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/buttonRequest"
+        style="@style/Widget.MaterialComponents.Button.TextButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/frameLayout"
+        android:layout_marginTop="10dp"
+        android:text="Request"
+        app:cornerRadius="4dp"
+        android:layout_marginLeft="68dp"
+        android:layout_marginRight="68dp"
+        app:backgroundTint="@color/lavender"
+        android:textColor="@android:color/white"/>
+
+
+    <!-- Other elements can be added here -->
+
+</RelativeLayout>
